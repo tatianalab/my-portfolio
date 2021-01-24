@@ -1,0 +1,165 @@
+/*------1. GENERAL STYLES------*/
+body{
+  color:#F1F3F8;
+  background-color:#1D1F20;
+  font-size:16px;
+  font-family: 'Alegreya', serif;
+  overflow-x: hidden;
+  margin:0;
+  font-size:16px;
+}
+
+h1 {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+
+}
+
+h2{
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 1.5rem;
+}
+
+h3{
+  font-family: 'Alegreya', serif;
+  font-size: 1.3rem;
+}
+
+p{
+  font-family: 'Alegreya', serif;
+  font-size:1rem;
+}
+
+a{
+  text-decoration: none;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 1.5rem;
+  color:#F1F3F8;
+
+}
+
+/*----STRUCTURAL STYLES-----*/
+
+.container{
+  width: 100vw;
+  height:100vh;
+  /*margin:0 auto;*/
+}
+
+header{
+  margin-top:5rem;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.back-home{
+  position: fixed;
+  top:2%;
+  left:1rem;
+  width:4rem;
+  height: 4rem;
+  background-color:rgba(255,140,0,1);
+  border-radius: 50%;
+  padding: 0.4rem;
+  transition:all 0.3s ease;
+}
+
+.back-home:hover{
+  background-color:rgba(255,140,0,0.8);
+
+}
+
+.back-home:active{
+  background-color:rgba(255,140,0,0.4);
+
+}
+
+.back-home a{
+font-size: 3rem;
+}
+
+
+.description{
+  display:grid;
+  grid-template-columns: 1fr
+  margin:5% 5%;
+  padding: 5%;
+}
+
+.features{
+  display:grid;
+  grid-template-columns: 1fr
+  margin:5% 5%;
+  padding: 5%;
+}
+
+.description-img{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.description-img img{
+  max-width: 30%;
+  height: auto;
+  /*display: block;*/
+  margin:0 auto;
+}
+
+@media only screen and (min-width:992px){
+
+.description{
+  margin:5% 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap:5%;
+}
+
+.description-text{
+    grid-column: 1 / 2;
+    background-image:none;
+    padding: 0;
+    justify-content: center;
+  }
+
+ .description-img{
+    grid-column:2 / 3;
+    justify-content: center;
+  }
+
+.features{
+  margin:5% 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap:5%;
+}
+
+.features-text{
+    grid-column: 2 / 3;
+    background-image:none;
+    justify-content: center;
+    order:2;
+  }
+
+ .features-img{
+    grid-column:1 / 2;
+    /*justify-content: center;*/
+    order: 1;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

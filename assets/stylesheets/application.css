@@ -1,0 +1,351 @@
+/*------1. GENERAL STYLES------*/
+body{
+  color:#F1F3F8;
+  background-color:#1D1F20;
+  font-size:16px;
+  font-family: 'Alegreya', serif;
+  overflow-x: hidden;
+  margin:0;
+  font-size:16px;
+}
+
+h1 {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+
+}
+
+h2{
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 1.5rem;
+}
+
+h3{
+  font-family: 'Alegreya', serif;
+  font-size: 1.3rem;
+}
+
+p{
+  font-family: 'Alegreya', serif;
+  font-size:1rem;
+}
+
+a{
+  text-decoration: none;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 1.5rem;
+  color:#F1F3F8;
+
+}
+
+/*a:hover {
+  color: #C0FDFB;
+}*/
+
+/*------2. STRUCTURAL MOBILE STYLES(max-width 992px)-------*/
+
+.container{
+  /*height: 100%;
+  overflow: hidden;*/
+  width: 100vw;
+  height:100vh;
+}
+
+
+.nav-btn{
+  border:none;
+  background:transparent;
+  cursor:pointer;
+  font-size:2.5rem;
+  color: #F1F3F8;
+}
+.circle{
+  width: 150px;
+  height: 150px;
+  background:rgba(255,140,0,0.8);
+  border-radius: 50%;
+  position:fixed;
+  top:-60px;
+  left:-60px;
+}
+.open-btn{
+  position:fixed;
+  top:10px;
+  left:10px;
+}
+
+.nav{
+  position: fixed;
+  top:0;
+  left:0;
+  height: 100vh;
+  transform:translateX(-100%);
+  transition:0.4s linear;
+  z-index: 100;
+}
+
+.nav.visible{
+  transform:translateX(0);
+}
+
+.nav-white{
+  background:whitesmoke;
+  width:60%;
+  max-width:590px;
+  min-width: 320px;
+}
+.nav-orange{
+  background:rgba(255,140,0,0.6);
+
+  width:60%;
+  max-width:550px;
+  min-width: 320px;
+}
+
+.nav-black{
+  background:#1D1F20;
+  width:95%;
+  padding:40px 0;
+  position:relative;
+}
+
+.close-btn{
+  position:absolute;
+  top:20px;
+  right:30px;
+  opacity:0.3;
+}
+
+.list{
+  list-style: none;
+  margin-top:2rem;
+
+}
+
+.list li{
+  margin:1.5rem 0;
+  font-size: 2.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.list li a {
+  color:whitesmoke;
+  font-size: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#welcome-section{
+  margin:0;
+  height: 100vh;
+  width:100%;
+  background-image:linear-gradient( rgba(29,31,32,0.8), rgba(29,31,32,0.8)  ),url("../images/oiseauparadis.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10% 0;
+
+  }
+
+.intro{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+#projects{
+  height: 100vh;
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.project-tile {
+  margin: 1.5rem 0;
+  position: relative
+}
+
+.project-tile a {
+  font-family: 'Alegreya', serif;!important
+  font-size: 2rem;!important
+}
+
+
+.project-tile .icon-tools{
+  display: none;
+  height: 0;
+  overflow: hidden;
+  transition: height 5s ease-in-out;
+
+}
+
+.project-tile.slide .icon-tools{
+  display: block;
+  position: absolute;
+    left: 600px;
+    width: 600px;
+    height: 120px;
+    margin-bottom:1rem;
+    -webkit-animation: slide 0.5s forwards;
+    -webkit-animation-delay: 0.5s;
+    animation: slide 0.7s forwards;
+    animation-delay: 0.3s;
+}
+
+
+
+@-webkit-keyframes slide {
+    100% { left: 0; }
+}
+
+@keyframes slide{
+    100% { left: 0; }
+}
+
+
+.icon-tools ul{
+  list-style: none;
+}
+.icon-tools ul li{
+  display: inline;
+  margin:0 0.5rem;
+}
+.icon-tools ul li img{
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+footer{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+/*------3. STRUCTURAL STYLES DESKTOP------*/
+
+@media only screen and (min-width:992px){
+
+  .container{
+  height: 100vh;
+  width:100%;
+  background-image:linear-gradient( rgba(29,31,32,0.8), rgba(29,31,32,0.8)  ),url("../images/oiseauparadis.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  grid-template-columns:1fr 1fr;
+  grid-column-gap:5%;
+  }
+
+  #welcome-section{
+    margin:0;
+    grid-column: 1 / 2;
+    background-image:none;
+    padding: 0;
+    justify-content: center;
+  }
+
+  #projects{
+    grid-column:2 / 3;
+    justify-content: center;
+  }
+
+
+
+  footer{
+    position: absolute;
+    bottom:0;
+    right: 0;
+    background-color:transparent;
+  }
+
+}
+
+
+/*------4. COMPONENTS------*/
+
+.main-buttons{
+  position:relative;
+}
+
+.btn-primary{
+  font-size:1.5rem;
+  margin:1.5rem 1.5rem;
+  text-decoration: none;
+  text-align: center;
+  // border: 3px solid rgba(255,140,0,1);
+  padding: 0.5rem 1.5rem;
+  border-radius: 3.125rem;
+  opacity: 1;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: absolute;
+  background:rgb(234, 235,235);
+  color:#1D1F20;
+  width:10rem;
+  height:2rem;
+  top:300px;
+  right:-130px;
+  -webkit-animation: slideup 0.5s forwards;
+  -webkit-animation-delay: 0.5s;
+    animation: slideup 1.5s forwards;
+    animation-delay: 0.5s;
+}
+
+@-webkit-keyframes slideup {
+    0% { top: 300px; }
+}
+
+
+@keyframes slideup{
+    100% { top: 0; }
+}
+
+
+.btn-primary:hover {
+  background: rgba(255,140,0,0.8);
+  color:#F1F3F8;
+}
+
+
+
+/*7. FOOTER STYLES*/
+
+.social-links{
+  list-style: none;
+  padding-left: 0;
+}
+
+.social-links li {
+  display: inline;
+  padding: 0.5rem;
+}
+
+.social-links .fab{
+  color: #F1F3F8;
+  font-size: 2rem;
+}
+
+footer .signature{
+  padding-right: 3%;
+}
+
+
+
+
+
+
+
+
+

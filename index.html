@@ -1,16 +1,101 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Playground - JavaScript 101</title>
-  </head>
-  <body>
-    <p style="margin-top: 40vh; text-align: center; font: normal 24px monospace;">
-      Open the console 🤓
-    </p>
+<head>
+  <meta charset="UTF-8">
+  <title>Tatiana Labrousse Portfolio</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,700;1,400;1,700&family=Merriweather+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/stylesheets/application.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+  <script src="https://kit.fontawesome.com/0032891572.js" crossorigin="anonymous"></script>
+</head>
 
-    <!-- Add some HTML in here -->
+<body>
 
-    <script src="main.js"></script>
-  </body>
+
+
+
+  <div class="container">
+
+      <div class="circle">
+ <button class="nav-btn open-btn">
+      <i class="fas fa-bars"></i>
+  </button>
+  </div>
+      <div class="nav nav-orange">
+        <div class="nav nav-black">
+          <button class="nav-btn close-btn">
+            <i class="fas fa-times">
+            </i>
+          </button>
+          <ul class="list">
+            <li><i class="fas fa-paper-plane"></i>  Get in touch</li>
+            <li><i class="fas fa-rocket"></i>  Projects</li>
+            <li><i class="fas fa-download"></i>  Resume</li>
+            <li><i class="fas fa-id-card-alt"></i>  About</li>
+          </ul>
+        </div>
+      </div>
+
+    <header id="welcome-section">
+      <div class="intro">
+      <h1>Hello, I'm Tatiana</h1>
+      <h2>a front-end developer</h2>
+      <h3>I create clean, elegant, responsive web applications.</h3>
+      </div>
+      <div class="main-buttons">
+      <a href="mailto:mvtatianalabrousse@gmail.com" class="btn-primary">Get in touch</a>
+      <!-- <a href="#projects" class="btn-primary">Projects</a> -->
+      </div>
+    </header>
+    <section id="projects">
+
+      <h2>Selected Projects</h2>
+
+      <div class="project-tile">
+        <a href="./pages/portfolio.html"> This Portfolio >> </a>
+        <div class="icon-tools">
+        <ul>
+          <li><img src="./assets/images/html-icon.svg" alt="html icon"> </li>
+          <li><img src="./assets/images/css-icon.svg" alt="css icon"></li>
+          <li><img src="./assets/images/js-icon.svg" alt="js icon"></li>
+        </ul>
+        </div>
+      </div>
+      <div class="project-tile">
+        <a href="./pages/spotitunes.html"> Spotitunes >> </a>
+         <div class="icon-tools">
+          <ul>
+          <li><img src="./assets/images/html-icon.svg" alt="html icon"> </li>
+          <li><img src="./assets/images/css-icon.svg" alt="css icon"></li>
+          <li><img src="./assets/images/js-icon.svg" alt="js icon"></li>
+        </ul>
+        </div>
+      </div>
+      <div class="project-tile">
+        <a href="./pages/equipy.html"> Equipy >>  </a>
+      </div>
+      <div class="project-tile">
+        <a href="./pages/misscocktail.html"> Miss Cocktail >> </a>
+      </div>
+      <div class="project-tile">
+        <a href="./pages/counterargument.html"> CounterArgument >> </a>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+      <div class="social-links">
+      <ul>
+        <li><i class="fab fa-github"></i></li>
+        <li><a href="#linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+      </ul>
+      </div>
+      <div class="signature">
+      <p>Designed and built by <span>Tatiana Labrousse</span></p>
+      </div>
+    </footer>
+    <script src="./src/index.js"></script>
+</body>
 </html>
+
