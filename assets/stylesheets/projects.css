@@ -29,6 +29,8 @@ h3{
 p{
   font-family: 'Alegreya', serif;
   font-size:1rem;
+  letter-spacing: .1rem;
+  line-height: 1.8;
 }
 
 a{
@@ -48,11 +50,24 @@ a{
 }
 
 header{
-  margin-top:5rem;
+  margin:3rem auto;
+  max-width: 50%;
+  text-align: center;
   display:flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+header a{
+  text-decoration: none;
+  border-bottom: #F1F3F8 0.125em solid;
+  color: rgba(255,140,0,1);
+}
+header a:hover{
+  text-decoration: none;
+  color: rgba(255,140,0,1);
+  border-bottom:none;
 }
 
 .back-home{
@@ -69,6 +84,7 @@ header{
 
 .back-home:hover{
   background-color:rgba(255,140,0,0.8);
+  border:2px solid #F1F3F8 ;
 
 }
 
@@ -105,6 +121,17 @@ font-size: 3rem;
   max-width: 30%;
   height: auto;
   /*display: block;*/
+  margin:0 auto;
+}
+
+.features-img{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.features-img img{
+  max-width: 30%;
+  height: auto;
   margin:0 auto;
 }
 
@@ -153,9 +180,30 @@ font-size: 3rem;
 
 
 
+/*------FOOTER STYLE--------*/
+footer{
+  display: flex;
+  justify-content: space-between;
+}
 
+.social-links{
+  list-style: none;
+  padding-left: 0;
+}
 
+.social-links li {
+  display: inline;
+  padding: 0.5rem;
+}
 
+.social-links .fab{
+  color: #F1F3F8;
+  font-size: 2rem;
+}
+
+footer .signature{
+  padding-right: 3%;
+}
 
 
 

@@ -124,15 +124,18 @@ a{
 }
 
 .list li{
-  margin:1.5rem 0;
-  font-size: 2.5rem;
+  margin:3rem 0;
+  font-size: 1.3rem;
   text-decoration: none;
   text-transform: uppercase;
+  padding-bottom:2rem;
+  border-bottom: 2px solid rgba(241,243,248,0.1);
 }
 
 .list li a {
   color:whitesmoke;
-  font-size: 1rem;
+  margin-left:1rem;
+  font-size: 1.3rem;
   text-decoration: none;
   text-transform: uppercase;
 }
