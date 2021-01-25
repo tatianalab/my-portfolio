@@ -308,6 +308,10 @@ footer .signature{
   padding-right: 3%;
 }
 
+footer .signature p{
+  font-size:0.8rem;!important
+}
+
 
 
 

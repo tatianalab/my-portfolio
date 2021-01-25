@@ -5,6 +5,7 @@ const projects = document.querySelectorAll('.project-tile');
 const projectButton = document.querySelector('#projectMenuItem');
 const projectSubMenu = document.querySelector('.projects-sub');
 
+
 open_btn.addEventListener('click', () => {
   nav.forEach(nav_el => nav_el.classList.add('visible'));
 });
@@ -28,4 +29,6 @@ projects.forEach(project => {
 projectButton.addEventListener('click', () => {
   projectSubMenu.classList.toggle('active');
 });
+
+
 
