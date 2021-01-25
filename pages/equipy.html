@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Tatiana Labrousse - counterargument</title>
+  <title>Tatiana Labrousse - Equipy</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,700;1,400;1,700&family=Merriweather+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../assets/stylesheets/projects.css">
@@ -19,30 +19,42 @@
     </div>
 
   <header>
-    <h1>CounterArgument</h1>
-      <h2>Created with Ruby on Rails...</h2>
-      <h2>Check it out <a href="http://www.counterargument.ca/">here</a><i class="fas fa-hand-point-left"></i></h2>
+    <div class="header-title">
+      <h1>Rent Equipy</h1>
+      <img src="http://rent-equipy.herokuapp.com/assets/equipy-logo-9a37bf4b7a31defbca67e7478d42a4d53f04f1ba315142c6618a3ba5bdda40a4.png" alt="equipy logo">
+    </div>
+      <h2>Created with Ruby on Rails, Sass, Bootstrap, ActiveStorage, Devise, PG Search, MapBox, Geocoder, Cloudinary, deployed on Heroku</h2>
+      <h2>Check it out <a href="http://rent-equipy.herokuapp.com/">here</a><i class="fas fa-hand-point-left"></i></h2>
   </header>
 
   <div class="description">
-    <div class="description-text">
+    <div class="description-text box">
       <h3>Description</h3>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero, cumque fuga in sapiente accusamus, sed molestiae dolore est, saepe alias nam, mollitia. A facere cum porro provident quae repellat maxime tempora? Architecto et, eos fugit! Consequuntur eveniet alias dolor sed voluptatibus, nihil, reprehenderit sint laboriosam, repellendus omnis saepe vitae, fugit!</p>
+        <p>Rent Equipy is a marketplace/Airbnb clone that was designed, implemented and shipped to production in 5 days as part of the Le Wagon curriculum.
+        It was built using Ruby On Rails and MVC architecture (model, view, controller). We worked as a SCRUM team of 4 people on this short sprint.
+      This marketplace allows a user to book sporting equipment from other users and offer their own as well.</p>
     </div>
-    <div class="description-img">
-      <img src="../assets/images/counterargument1.png" alt="counterargument">
-      <img src="../assets/images/counterargument2.png" alt="counterargument">
+    <div class="description-img box">
+      <img src="../assets/images/equipy1.png" alt="equipy">
+      <img src="../assets/images/equipy4.png" alt="equipy">
     </div>
   </div>
 
   <div class="features">
-    <div class="features-text">
+    <div class="features-text box">
       <h3>Features</h3>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo, iure, nisi? Repellat tenetur a quam doloremque illo voluptatem debitis rerum deleniti quaerat magnam quis, voluptatibus veritatis quo ea quos adipisci dignissimos optio repellendus consequatur modi incidunt. Eum, nobis? Cumque laborum blanditiis incidunt debitis ab unde dignissimos itaque eveniet porro iusto?</p>
+      <ul>
+        <li><i class="fas fa-rocket"></i>SEARCH: the PG search gem was added to enable a user to search by keyword for available equipment</li>
+        <li><i class="fas fa-rocket"></i>AUTHENTICATION & AUTHORIZATION: the Devise gem was used to Authentication and the Pundit gem for authorization. A user cannot book their own equipment or edit another user's information.</li>
+        <li><i class="fas fa-rocket"></i>IMAGE SCROLL: the Cloudinary gem was added and multiple image upload enabled. Image scroll was added to each equipment show page.</li>
+        <li><i class="fas fa-rocket"></i>BOOKING CALENDAR: A user can request to book through a booking calendar.</li>
+        <li><i class="fas fa-rocket"></i>REVIEWS: A user can give a written and star review to each equipment.</li>
+        <li><i class="fas fa-rocket"></i>NOTIFICATIONS: A user receives a notification when their equipment has a requested booking.</li>
+      </ul>
     </div>
-    <div class="features-img">
-      <img src="../assets/images/counterargument3.png" alt="counterargument">
-      <img src="../assets/images/counterargument4.png" alt="counterargument">
+    <div class="features-img box">
+      <img src="../assets/images/equipy3.png" alt="equipy">
+      <img src="../assets/images/equipy2.png" alt="equipy">
     </div>
   </div>
   <footer>
@@ -57,7 +69,6 @@
       </div>
     </footer>
   </div>
-
+<script src="../src/index.js"></script>
 </body>
 </html>
-

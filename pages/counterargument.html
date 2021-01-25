@@ -19,7 +19,10 @@
     </div>
 
   <header>
-    <h1>CounterArgument</h1>
+    <div class="header-title">
+      <h1>CounterArgument</h1>
+      <img src="http://www.counterargument.ca/assets/logo-384ebee32d1e5d57293be11107ea55f36460ca93cf72a449b338c6b34bcc0a6b.png" alt="">
+    </div>
       <h2>Created with Ruby on Rails, Sass, Bootstrap, ActiveStorage, Devise, Pundit, AlgoliaSearch, Cloudinary, deployed on Heroku</h2>
       <h2>Check it out <a href="http://www.counterargument.ca/">here</a><i class="fas fa-hand-point-left"></i></h2>
   </header>
@@ -27,7 +30,13 @@
   <div class="description">
     <div class="description-text">
       <h3>Description</h3>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero, cumque fuga in sapiente accusamus, sed molestiae dolore est, saepe alias nam, mollitia. A facere cum porro provident quae repellat maxime tempora? Architecto et, eos fugit! Consequuntur eveniet alias dolor sed voluptatibus, nihil, reprehenderit sint laboriosam, repellendus omnis saepe vitae, fugit!</p>
+      <p>This MVP was designed, implemented and shipped to production in a 10 day sprint,
+      using Ruby On Rails and MVC architecture (model, view, controller), as my final
+    project for Le Wagon coding bootcamp. We worked as a SCRUM team of 4 people, taking turns
+    at developing and implementing different features. CounterArgument is an app where a user can
+    search for short, clear and sourced counterarguments and/or give counters to arguments that were provided by the community.
+    The DB has a many to many relationship, with an argument being/having a parent argument, and thus also being/having a child argument.
+  I was mostly responsible for designing the Figma prototype and implementing this design to the front-end of the app, although I did touch on multiple aspects of our project.  </p>
     </div>
     <div class="description-img">
       <img src="../assets/images/counterargument1.png" alt="counterargument">
@@ -38,7 +47,14 @@
   <div class="features">
     <div class="features-text">
       <h3>Features</h3>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo, iure, nisi? Repellat tenetur a quam doloremque illo voluptatem debitis rerum deleniti quaerat magnam quis, voluptatibus veritatis quo ea quos adipisci dignissimos optio repellendus consequatur modi incidunt. Eum, nobis? Cumque laborum blanditiis incidunt debitis ab unde dignissimos itaque eveniet porro iusto?</p>
+      <ul>
+        <li><i class="fas fa-rocket"></i>SEARCH: the AlgoliaSearch gem was added to enable a user to search by keyword or sentence for topics or existing arguments</li>
+        <li><i class="fas fa-rocket"></i>TOPIC TAGGING: While adding a new argument, a user is able to tag multiple new or existing topics.</li>
+        <li><i class="fas fa-rocket"></i>UPVOTING: A user is able to upvote another user's argument as funny, accurate or well-sourced. Users cannot upvote their own arguments.</li>
+        <li><i class="fas fa-rocket"></i>NOTIFICATIONS: A user receives a notification when one of their arguments is upvoted or countered.</li>
+        <li><i class="fas fa-rocket"></i>GAMIFICATION: A badge system was added attached to number of votes. A user receives different badges based on the type and number of upvotes on their arguments</li>
+        <li><i class="fas fa-rocket"></i>ANONIMITY: A user can counter or add an argument anonymously, or change a submitted argument to anonymous.</li>
+      </ul>
     </div>
     <div class="features-img">
       <img src="../assets/images/counterargument3.png" alt="counterargument">
@@ -57,6 +73,6 @@
       </div>
     </footer>
   </div>
-
+<script src="../src/index.js"></script>
 </body>
 </html>

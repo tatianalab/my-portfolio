@@ -1,36 +1,41 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <title>Tatiana Labrousse Portfolio</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,700;1,400;1,700&family=Merriweather+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./assets/stylesheets/application.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-  <script src="https://kit.fontawesome.com/0032891572.js" crossorigin="anonymous"></script>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <title>Tatiana Labrousse Portfolio</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,700;1,400;1,700&family=Merriweather+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/stylesheets/application.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <script src="https://kit.fontawesome.com/0032891572.js" crossorigin="anonymous"></script>
+  </head>
 
 <body>
 
-
-
-
   <div class="container">
-
       <div class="circle">
- <button class="nav-btn open-btn">
-      <i class="fas fa-bars"></i>
-  </button>
-  </div>
+        <button class="nav-btn open-btn">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
       <div class="nav nav-orange">
         <div class="nav nav-black">
           <button class="nav-btn close-btn">
-            <i class="fas fa-times">
-            </i>
+            <i class="fas fa-times"></i>
           </button>
-          <ul class="list">
-            <li> <i class="fas fa-paper-plane"></i><a href="mailto:mvtatianalabrousse@gmail.com">  Get in touch</a></li>
-            <li><i class="fas fa-rocket"></i><a href="">  Projects</a></li>
+            <ul class="list">
+              <li> <i class="fas fa-paper-plane"></i><a href="mailto:mvtatianalabrousse@gmail.com">  Get in touch</a></li>
+              <li><i class="fas fa-rocket"></i><a href="#" id="projectMenuItem">  Projects</a>
+              <div class="projects-sub">
+                <ul>
+                  <li><a href="./pages/portfolio.html">This Portfolio</a></li>
+                  <li><a href="./pages/spotitunes.html">Spotitunes</a></li>
+                  <li><a href="./pages/equipy">Equipy</a></li>
+                  <li><a href="./pages/misscocktail">Miss Cocktail</a></li>
+                  <li><a href="./pages/counterargument">CounterArgument</a></li>
+                </ul>
+              </div>
+            </li>
             <li><i class="fas fa-download"></i><a href="">  Resume</a></li>
             <li><i class="fas fa-id-card-alt"></i><a href="">  About</a></li>
           </ul>
@@ -45,48 +50,67 @@
       </div>
       <div class="main-buttons">
       <a href="mailto:mvtatianalabrousse@gmail.com" class="btn-primary">Get in touch</a>
-      <!-- <a href="#projects" class="btn-primary">Projects</a> -->
       </div>
     </header>
+
     <section id="projects">
-
       <h2>Selected Projects</h2>
-
-      <div class="project-tile">
-        <a href="./pages/portfolio.html"> This Portfolio >> </a>
+        <div class="project-tile">
+          <a href="./pages/portfolio.html"> This Portfolio >> </a>
         <div class="icon-tools">
-        <ul>
-          <li><img src="./assets/images/html-icon.svg" alt="html icon"> </li>
-          <li><img src="./assets/images/css-icon.svg" alt="css icon"></li>
-          <li><img src="./assets/images/js-icon.svg" alt="js icon"></li>
-        </ul>
+          <ul>
+            <li><img src="./assets/images/html-icon.svg" alt="html icon"> </li>
+            <li><img src="./assets/images/css-icon.svg" alt="css icon"></li>
+            <li><img src="./assets/images/javascript.svg" alt="js icon"></li>
+            <li><img src="./assets/images/webpack.svg" alt="webpack icon"></li>
+            <li><img src="./assets/images/github-icon.svg" alt="github icon" style="background-color: white; border-radius: 50%"></li>
+          </ul>
         </div>
       </div>
       <div class="project-tile">
         <a href="./pages/spotitunes.html"> Spotitunes >> </a>
          <div class="icon-tools">
+            <ul>
+            <li><img src="./assets/images/react.svg" alt="react icon"> </li>
+            <li><img src="./assets/images/javascript.svg" alt="js icon"></li>
+            <li><img src="./assets/images/surge.svg" alt="surge icon"></li>
+          </ul>
+        </div>
+      </div>
+      <div class="project-tile">
+        <a href="./pages/equipy.html"> Rent Equipy >>  </a>
+        <div class="icon-tools">
           <ul>
-          <li><img src="./assets/images/html-icon.svg" alt="html icon"> </li>
-          <li><img src="./assets/images/css-icon.svg" alt="css icon"></li>
-          <li><img src="./assets/images/js-icon.svg" alt="js icon"></li>
+            <li><img src="./assets/images/ruby.svg" alt="html icon"> </li>
+            <li><img src="./assets/images/rails.svg" alt="css icon"></li>
+            <li><img src="./assets/images/bootstrap.svg" alt="bootstrap icon"></li>
+            <li><img src="./assets/images/sass.svg" alt="sass icon"></li>
+            <li><img src="./assets/images/heroku.svg" alt=heroku icon"></li>
         </ul>
         </div>
       </div>
       <div class="project-tile">
-        <a href="./pages/equipy.html"> Equipy >>  </a>
-      </div>
-      <div class="project-tile">
         <a href="./pages/misscocktail.html"> Miss Cocktail >> </a>
+        <div class="icon-tools">
+          <ul>
+            <li><img src="./assets/images/ruby.svg" alt="html icon"> </li>
+            <li><img src="./assets/images/rails.svg" alt="css icon"></li>
+            <li><img src="./assets/images/bootstrap.svg" alt="bootstrap icon"></li>
+            <li><img src="./assets/images/sass.svg" alt="sass icon"></li>
+            <li><img src="./assets/images/heroku.svg" alt=heroku icon"></li>
+          </ul>
+        </div>
       </div>
       <div class="project-tile">
         <a href="./pages/counterargument.html"> CounterArgument >> </a>
         <div class="icon-tools">
           <ul>
-          <li><img src="./assets/images/ruby.svg" alt="html icon"> </li>
-          <li><img src="./assets/images/rails.svg" alt="css icon"></li>
-          <li><img src="./assets/images/bootstrap.svg" alt="js icon"></li>
-          <li><img src="./assets/images/heroku.svg" alt="js icon"></li>
-        </ul>
+            <li><img src="./assets/images/ruby.svg" alt="html icon"> </li>
+            <li><img src="./assets/images/rails.svg" alt="css icon"></li>
+            <li><img src="./assets/images/bootstrap.svg" alt="bootstrap icon"></li>
+            <li><img src="./assets/images/sass.svg" alt="sass icon"></li>
+            <li><img src="./assets/images/heroku.svg" alt=heroku icon"></li>
+          </ul>
         </div>
       </div>
     </section>
@@ -104,6 +128,6 @@
       </div>
     </footer>
     <script src="./src/index.js"></script>
-</body>
+  </body>
 </html>
 
