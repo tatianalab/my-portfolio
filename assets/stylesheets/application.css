@@ -1,4 +1,18 @@
 /*------1. GENERAL STYLES------*/
+html {
+  font-size: 22px;
+}
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  html {
+    font-size: 1rem;
+  }
+}
+
 body{
   color:#F1F3F8;
   background-color:#1D1F20;
@@ -6,7 +20,6 @@ body{
   font-family: 'Alegreya', serif;
   overflow-x: hidden;
   margin:0;
-  font-size:16px;
 }
 
 h1 {
@@ -34,7 +47,7 @@ p{
 a{
   text-decoration: none;
   font-family: 'Merriweather Sans', sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color:#F1F3F8;
 
 }
@@ -46,8 +59,6 @@ a{
 /*------2. STRUCTURAL MOBILE STYLES(max-width 992px)-------*/
 
 .container{
-  /*height: 100%;
-  overflow: hidden;*/
   width: 100vw;
   height:100vh;
 }
@@ -57,22 +68,22 @@ a{
   border:none;
   background:transparent;
   cursor:pointer;
-  font-size:2.5rem;
+  font-size:3.5rem;
   color: #F1F3F8;
 }
 .circle{
-  width: 150px;
-  height: 150px;
+  width: 10rem;
+  height: 10rem;
   background:rgba(255,140,0,0.8);
   border-radius: 50%;
   position:fixed;
-  top:-60px;
-  left:-60px;
+  top:-3.33rem;
+  left:-3.33rem;
 }
 .open-btn{
   position:fixed;
-  top:10px;
-  left:10px;
+  top:1rem;
+  left:1rem;
 }
 
 .nav{
@@ -92,23 +103,22 @@ a{
 
 .nav-orange{
   background:rgba(255,140,0,0.6);
-
   width:60%;
-  max-width:550px;
-  min-width: 320px;
+  max-width:27.5rem;
+  min-width: 16rem;
 }
 
 .nav-black{
   background:#1D1F20;
   width:95%;
-  padding:40px 0;
+  padding:2.22rem 0;
   position:relative;
 }
 
 .close-btn{
   position:absolute;
-  top:20px;
-  right:30px;
+  top:1rem;
+  right:3.75rem;
   opacity:0.3;
 }
 
@@ -179,6 +189,7 @@ a{
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 3rem;
 }
 
 
@@ -214,9 +225,9 @@ a{
 .project-tile.slide .icon-tools{
   display: block;
   position: absolute;
-    left: 600px;
-    width: 600px;
-    height: 120px;
+    left: 33.33rem;
+    width: 33.33rem;
+    height: 6.66rem;
     margin-bottom:1rem;
     -webkit-animation: slide 0.5s forwards;
     -webkit-animation-delay: 0.5s;
@@ -252,6 +263,7 @@ footer{
   height: auto;
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
 
 }
 
@@ -318,8 +330,8 @@ footer{
   color:#1D1F20;
   width:10rem;
   height:2rem;
-  top:300px;
-  right:-130px;
+  top:16.67rem;
+  right:-7.22rem;
   -webkit-animation: slideup 0.5s forwards;
   -webkit-animation-delay: 0.5s;
     animation: slideup 1.5s forwards;
@@ -327,7 +339,7 @@ footer{
 }
 
 @-webkit-keyframes slideup {
-    0% { top: 300px; }
+    0% { top: 16.67rem; }
 }
 
 
@@ -362,6 +374,11 @@ footer{
 
 footer .signature{
   padding-right: 3%;
+
+}
+
+footer .signature p{
+  font-size:0.8rem;!important
 }
 
 

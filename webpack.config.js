@@ -2,6 +2,7 @@ const path = require('path');
 
 module.exports = {
   output: {
+    publicPath: "/my-portfolio/",
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js'
   },
