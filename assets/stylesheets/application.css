@@ -194,6 +194,7 @@ a{
 
 
 #projects{
+  /*visibility: hidden;*/
   height: 100vh;
   width:100%;
   display: flex;
@@ -220,29 +221,6 @@ a{
   overflow: hidden;
   transition: height 5s ease-in-out;
 
-}
-
-.project-tile.slide .icon-tools{
-  display: block;
-  position: absolute;
-    left: 33.33rem;
-    width: 33.33rem;
-    height: 6.66rem;
-    margin-bottom:1rem;
-    -webkit-animation: slide 0.5s forwards;
-    -webkit-animation-delay: 0.5s;
-    animation: slide 0.7s forwards;
-    animation-delay: 0.2s;
-}
-
-
-
-@-webkit-keyframes slide {
-    100% { left: 0; }
-}
-
-@keyframes slide{
-    100% { left: 0; }
 }
 
 
@@ -292,9 +270,54 @@ footer{
   }
 
   #projects{
+    /*visibility:visible;*/
     grid-column:2 / 3;
     justify-content: center;
   }
+
+  .project-tile .icon-tools{
+  display: none;
+  height: 0;
+  overflow: hidden;
+  transition: height 5s ease-in-out;
+
+}
+
+  .project-tile.slide .icon-tools{
+  display: block;
+  position: absolute;
+    left: 33.33rem;
+    width: 33.33rem;
+    height: 6.66rem;
+    margin-bottom:1rem;
+    -webkit-animation: slide 0.5s forwards;
+    -webkit-animation-delay: 0.5s;
+    animation: slide 0.7s forwards;
+    animation-delay: 0.2s;
+}
+
+
+
+@-webkit-keyframes slide {
+    100% { left: 0; }
+}
+
+@keyframes slide{
+    100% { left: 0; }
+}
+
+
+.icon-tools ul{
+  list-style: none;
+}
+.icon-tools ul li{
+  display: inline;
+  margin:0 0.5rem;
+}
+.icon-tools ul li img{
+  height: 1.5rem;
+  width: 1.5rem;
+}
 
 
 
