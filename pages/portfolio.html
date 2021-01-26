@@ -1,61 +1,74 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
   <meta charset="UTF-8">
-  <title>Tatiana Labrousse - portfolio</title>
+  <title>Tatiana Labrousse - spotitunes</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,700;1,400;1,700&family=Merriweather+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../assets/stylesheets/projects.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
   <script src="https://kit.fontawesome.com/0032891572.js" crossorigin="anonymous"></script>
-</head>
-<body>
-  <div class="container">
+  </head>
 
-    <div class="back-home">
-      <a href="../index.html">
-      <i class="fas fa-backward"></i>
-      </a>
+  <body>
+    <div class="container">
+      <div class="back-home">
+        <a href="../index.html">
+          <i class="fas fa-backward"></i>
+        </a>
+      </div>
+
+    <header>
+      <div class="header-title">
+        <h1>This Portfolio</h1>
+      </div>
+        <h2>Created with HTML, CSS, Javascript, Webpack, deployed on Github Pages</h2>
+        <!-- <h2>Check it out <a href="http://spotitunes.surge.sh/">here</a><i class="fas fa-hand-point-left"></i></h2> -->
+    </header>
+
+    <div class="description">
+      <div class="description-text box">
+        <h3>Description</h3>
+        <p>In an effort to get back to basics, this portfolio was built on vanilla html, css and some javascript (Es6).
+          I used Webpack with Babel so as to be able to transform it later on.
+          I first designed it on Figma before getting into coding. I wanted to keep things simple, clean but memorable.
+          A bit of JS and CSS animation was used to accentuate information to be noticed. It is an ongoing project and is currently
+          being transformed into a React SPA.
+        </p>
+       </div>
+      <div class="description-img box">
+        <img src="../assets/images/portfolio2.png" alt="portfolio-img">
+      <img src="../assets/images/portfolio1.png" alt="portfolio-img">
+      </div>
     </div>
 
-  <header>
-    <h1>This here Portfolio</h1>
-      <h2>Building page content😉</h2>
-      <!-- <h2>Check it out <a href="http://www.counterargument.ca/">here</a><i class="fas fa-hand-point-left"></i></h2> -->
-  </header>
-
-<!--   <div class="description">
-    <div class="description-text">
-      <h3>Description</h3>
-        <p>I designed and builts this portfolio while trying to keep things clean, minimalist but memorable</p>
-    </div>
-    <div class="description-img">
-      <img src="../assets/images/counterargument1.png" alt="counterargument">
-      <img src="../assets/images/counterargument2.png" alt="counterargument">
-    </div>
-  </div>
-
-  <div class="features">
-    <div class="features-text">
-      <h3>Features</h3>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo, iure, nisi? Repellat tenetur a quam doloremque illo voluptatem debitis rerum deleniti quaerat magnam quis, voluptatibus veritatis quo ea quos adipisci dignissimos optio repellendus consequatur modi incidunt. Eum, nobis? Cumque laborum blanditiis incidunt debitis ab unde dignissimos itaque eveniet porro iusto?</p>
-    </div>
-    <div class="features-img">
-      <img src="https://media.giphy.com/media/1lyjQemTcL5r0Pcffi/giphy.gif" alt="counterargument" id="spotitunes-img" >
-    </div>
-  </div> -->
-  <!-- <footer>
-      <div class="social-links">
-      <ul>
-        <li><a href="https://github.com/tatianalab"><i class="fab fa-github"></i></a></li>
-        <li><a href="https://www.linkedin.com/in/tatianalab/"><i class="fab fa-linkedin-in"></i></a></li>
+    <div class="features">
+      <div class="features-text box">
+        <h3>Features</h3>
+        <ul>
+        <li><i class="fas fa-rocket"></i>RESPONSIVE: I used CSS grid and Flexbox within my media queries (just 2) to make the content responsive.</li>
+        <li><i class="fas fa-rocket"></i>MENU : The circular multi-layer menu was designed using a circle in absolute position. The layers are simply Divs within each other with different sizes and transition speeds.</li>
+        <li><i class="fas fa-rocket"></i>TOGGLE: In order to offer a better UX and not have to much information on my About page, CSS and very little javascript were used to create the toggle elements containing paragraphs.</li>
       </ul>
       </div>
-      <div class="signature">
-      <p>Designed and built by <span>Tatiana Labrousse</span></p>
+      <div class="features-img box">
+        <img src="https://media.giphy.com/media/1lyjQemTcL5r0Pcffi/giphy.gif" alt="counterargument" id="spotitunes-img">
       </div>
-    </footer> -->
+    </div>
+
+    <footer>
+        <div class="social-links">
+          <ul>
+            <li><a href="https://github.com/tatianalab"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/tatianalab/"><i class="fab fa-linkedin-in"></i></a></li>
+          </ul>
+        </div>
+        <div class="signature">
+          <p>Designed and built by <span>Tatiana Labrousse</span></p>
+        </div>
+    </footer>
   </div>
 
-</body>
+  <script src="../src/index.js"></script>
+  </body>
 </html>
