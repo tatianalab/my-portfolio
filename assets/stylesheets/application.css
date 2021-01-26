@@ -36,7 +36,8 @@ h2{
 
 h3{
   font-family: 'Alegreya', serif;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
+
 }
 
 p{
@@ -192,6 +193,8 @@ a{
   flex-direction: column;
   align-items: center;
   margin-bottom: 3rem;
+  padding: 2rem;
+  text-align: center;
 }
 
 
