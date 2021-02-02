@@ -313,7 +313,7 @@ footer{
 @keyframes slide{
     100% { left: 0; }
 }
-
+*/
 
 .icon-tools ul{
   list-style: none;
@@ -325,7 +325,7 @@ footer{
 .icon-tools ul li img{
   height: 1.5rem;
   width: 1.5rem;
-}*/
+}
 
 
 
